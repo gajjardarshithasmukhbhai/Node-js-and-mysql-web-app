@@ -1,0 +1,21 @@
+.cla
+{
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 7px 7px 9px #aaaaaa;
+  border-top: 3px solid blue;
+  border-left: 3px solid red;
+  border-right: 3px solid green;
+  border-bottom: 3px solid #F411EC;
+}
+.te{
+  font-family: 'Open Sans', sans-serif;
+  
+  display: flex;
+  color: white;
+  font-weight: 100;
+}
+.kk{
+	background-color:#00695c;
+}

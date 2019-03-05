@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello</title>
+  <link rel="stylesheet" type="text/css" href="/bootstrap/bootstrap.min.css">
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/bootstrap-js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/css.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light kk sticky-top">
+  
+<div class="navbar-collapse" >
+  <ul class="navbar-nav lead ml-auto" style="font-weight: 600;f">
+    <li class="nav-item ">
+      <a href="/" class="nav-link text-white te">Home</a>
+    </li>
+    <li>
+      <a href="/Shop" class="nav-link text-white te">Shop</a>
+    </li>
+    <li class="nav-item">
+      <a href="/Product" class="nav-link text-white te">Product</a>
+    </li>
+    <li>
+      <a href="/Cart" class="nav-link text-white te">Cart</a>
+    </li>
+    <li>
+      <a href="/Order" class="nav-link text-white te">Order</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te">Add Product</a>
+    </li>
+    <li>
+      <a href="/Admin_Product" class="nav-link text-white te">Admin Product</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<br>
+<div class="container">
+<div class="row">
+  each val in data
+    <div class="col-md-3">
+      <br>
+      <div class="card-deck">
+        <div class="card" style="border: 2px solid #00695c">
+        <img src=#{val.Image} class="card-img-top" alt="..." >
+        <div class="card-body"><center>
+        <h5 class="card-title">#{val.title}</h5></center><hr>
+        <center><p class="card-text"><b>Description:</b><br>#{val.description}</p></center>
+        <hr>
+        <center><p class="card-text"><b>Price:</b><br>#{val.price}<b>$</b></p></center>
+          <hr>
+
+        <div>
+        <a href='/Product/#{val.uid}'  class="btn btn-outline-warning" style="color:black;font-weight: 600;">Details</a>
+          <button class="btn btn-primary" style="color:black;font-weight: 600;">Add to Cart</button>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+
+

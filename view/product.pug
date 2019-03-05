@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello</title>
+  <link rel="stylesheet" type="text/css" href="/bootstrap/bootstrap.min.css">
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/bootstrap-js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/css.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light kk">
+  
+<div class="navbar-collapse" >
+  <ul class="navbar-nav lead ml-auto" style="font-weight: 600;f">
+    <li class="nav-item ">
+      <a href="/Home" class="nav-link text-white te">Home</a>
+    </li>
+    <li>
+      <a href="/Shop" class="nav-link text-white te">Shop</a>
+    </li>
+    <li class="nav-item">
+      <a href="/Product" class="nav-link text-white te">Product</a>
+    </li>
+    <li>
+      <a href="/Cart" class="nav-link text-white te">Cart</a>
+    </li>
+    <li>
+      <a href="/Order" class="nav-link text-white te">Order</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te">Add Product</a>
+    </li>
+    <li>
+      <a href="/Admin_Product" class="nav-link text-white te">Admin Product</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<br>
+<br>
+<div>
+  <center>
+    <div class="col-md-3">
+      <br>
+      <div class="card-deck">
+        <div class="card" style="bOrder: 2px solid #0B21F7">
+        <img src=#{id_data.Image} class="card-img-top" alt="..." style="height: 140px;">
+        <div class="card-body">
+        <h5 class="card-title">#{id_data.title}</h5>
+        <p class="card-text"><b>description:</b><br>#{id_data.description}</p>
+        <p class="card-text"><b>price:</b><br>
+        <b>#{id_data.price}$</b></p>
+        <div>
+        <form action="/Cart" method="POST">
+          <button type="submit" class="btn btn-primary" style="color:white;font-weight: 600;">Add to Cart
+          </button>
+          <input type="hidden" name="ProductId" value="#{id_data.uid}">
+          <input type="hidden" name="price" value="#{id_data.price}">
+        </form>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </center>
+</div>
+</body>
+</html>
